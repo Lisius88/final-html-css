@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-div">
+            <nav class="div-nav">
+                <div class="div-logo-header">
+                    <a class="logo" href="index.html">Web<span class="logo-header">Studio</span></a>
+                </div>
+                <button type="button" class="menu-button is-open" data-menu-button aria-expanded="false"
+                    aria-controls="menu-container">
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                        <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" data-menu id="menu-container">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a class="nav-list-link"
+                                href="./index.html">Студия</a></li>
+                        <li class="nav-list__item"><a class="nav-list-link nav-list-link--portfolio" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav-list__item"><a class="nav-list-link" href="">Контакты</a></li>
+                    </ul>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                                <svg class="contacts-list__icon-envelope">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link contacts-list__link--size" href="tel:+380961111111">
+                                <svg class="contacts-list__icon-smartphone">
+                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="socials-header-list">
+                        <li class="socials-header-list__item"><a class="socials-header-list__link" href="">Instagram</a>
+                        </li>
+                        <li class="socials-header-list__item"><a class="socials-header-list__link" href="">Twitter</a></li>
+                        <li class="socials-header-list__item"><a class="socials-header-list__link" href="">Facebook</a></li>
+                        <li class="socials-header-list__item"><a class="socials-header-list__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="line"></div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <div class="portfolio-buttons-container">
+                <h1 class="for-me">Основа</h1>
+                <ul class="buttons-list">
+                    <li class="buttons-list__item"><button class="buttons-list__button" type="button">Все</button></li>
+                    <li class="buttons-list__item"><button class="buttons-list__button" type="button">Веб-сайты</button></li>
+                    <li class="buttons-list__item"><button class="buttons-list__button" type="button">Приложения</button></li>
+                    <li class="buttons-list__item"><button class="buttons-list__button" type="button">Дизайн</button></li>
+                    <li class="buttons-list__item"><button class="buttons-list__button" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
+            <div class="product-container">
+                <ul class="product-list">
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/techno.jpg 370w,
+                                     ./images/first_x2.jpg 740w
+                             "
+                             src="./images/techno.jpg" 
+                             alt="Веб-сайт" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Технокряк</h2>
+                                <p class="product__type">Веб-сайт</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/poster.jpg 370w,
+                                     ./images/second_x2.jpg 740w
+                             "
+                             src="./images/poster.jpg" 
+                             alt="Дизайн" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения
+                            о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Постер New Orlean vs Golden Star</h2>
+                                <p class="product__type">Дизайн</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img srcset="./images/rest.jpg 370w,
+                                        ./images/thirth_x2.jpg 740w
+                            " 
+                            src="./images/rest.jpg" 
+                            alt="Приложение"
+                            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                            >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Ресторан Seafood</h2>
+                                <p class="product__type">Приложение</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/project.jpg 370w,
+                                     ./images/fourth_x2.jpg 740w
+                             "
+                             src="./images/project.jpg" 
+                             alt="Маркетинг" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Проект Prime</h2>
+                                <p class="product__type">Маркетинг</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img srcset="./images/boxes.jpg 370w,
+                                        ./images/fifth_x2.jpg 740w
+                                " 
+                                src="./images/boxes.jpg" 
+                                alt="Приложение"
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Проект Boxes</h2>
+                                <p class="product__type">Приложение</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/inspiration.jpg 370w,
+                                     ./images/sixth_x2.jpg 740w
+                             "
+                             src="./images/inspiration.jpg" 
+                             alt="Веб-сайт" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Inspiration has no Borders</h2>
+                                <p class="product__type">Веб-сайт</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/edition.jpg 370w,
+                                     ./images/seventh_x2.jpg 740w
+                             "
+                             src="./images/edition.jpg" 
+                             alt="Дизайн" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Издание Limited Edition</h2>
+                                <p class="product__type">Дизайн</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/lab.jpg 370w,
+                                     ./images/eighth_x2.jpg 740w
+                             "
+                             src="./images/lab.jpg" 
+                             alt="Маркетинг" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Проект LAB</h2>
+                                <p class="product__type">Маркетинг</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-list__item">
+                        <article class="product">
+                            <div class="product__thumb">
+                            <img
+                             srcset="./images/busines.jpg 370w,
+                                     ./images/ninth_x2.jpg 740w
+                             "
+                             src="./images/busines.jpg" 
+                             alt="Приложение" 
+                             sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                             >
+                            <p class="product__overview">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения
+                                о компании или частном лице.</p>
+                            </div>
+                            <div class="product__content">
+                                <h2 class="product__name">Growing Business</h2>
+                                <p class="product__type">Приложение</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-flex">
+                <div class="adress-social-flex">
+                <div class="adress-flex">
+                    <div class="div-logo">
+                        <a class="logo" href="index.html">Web<span class="logo-footer">Studio</span></a>
+                    </div>
+                    <address class="footer-adress">
+                        <p class="footer-adress__adress"> г. Киев, пр-т Леси Украинки, 26 <br></p>
+                        <a class="footer-adress__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="footer-adress__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </address>
+                </div>
+                <div class="social-flex">
+                    <h3 class="footer-heading">Присоединяйтесь</h3>
+                    <ul class="social-footer-list">
+                        <li class="social-footer-list__item">
+                            <a class="social-footer-list__link" href="">
+                                <svg class="social-footer-list__icon" width="20px" height="20px">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-footer-list__item">
+                            <a class="social-footer-list__link" href="">
+                                <svg class="social-footer-list__icon" width="20px" height="20px">
+                                    <use href="./images/symbol-defs.svg#icon-twitter-second"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-footer-list__item">
+                            <a class="social-footer-list__link" href="">
+                                <svg class="social-footer-list__icon" width="20px" height="20px">
+                                    <use href="./images/symbol-defs.svg#icon-facebook-second"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-footer-list__item">
+                            <a class="social-footer-list__link" href="">
+                                <svg class="social-footer-list__icon" width="20px" height="20px">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Подпишитесь на рассылку</h3>
+                    <form class="form-flex" autocomplete="off" method="POST">
+                        <label>
+                            <input class="input-footer" name="mail" type="email" placeholder="E-mail" value="">
+                        </label>
+                        <button class="button-footer" type="submit">
+                            <div class="button-flex">
+                                <span>Подписаться</span>
+                                <svg class="button-icon" width="24px" height="24px">
+                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
+
