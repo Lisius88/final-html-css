@@ -1534,7 +1534,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    margin-top: 100px;
+    margin-top: 150px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     height: 581px;
